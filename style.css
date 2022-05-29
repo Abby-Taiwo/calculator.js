@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    background: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    width: 380px;
+    height: 700px;
+    background-color: #1c1c1c;
+    border-radius: 30px;
+}
+.container_top {
+    height: 30%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.container_top_content {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    font-size: 55px;
+
+}
+
+.container_bottom {
+    padding:10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows:    repeat(5,auto);
+    grid-template-columns: repeat(4,auto);
+    grid-row-gap:    8px;
+    grid-column-gap: 8px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #505050;
+    color: #fff;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+button:hover, button:active {
+    background-color: rgb(80, 70, 80);
+  }
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end:   3; 
+    width: 170px;
+    border-radius: 23%/50%;
+    text-align: left;     
+    padding-left: 33px;
+}
+
+.orange {
+    background-color: #ff9500;
+}
+.orange:hover, .orange:active {
+    background-color: rgb(255, 140, 0);
+}
+
+.ash {
+    background-color: #d4d4d2;
+    color: #1c1c1c
+}
+.ash:hover, .ash:active {
+    background-color: rgb(220, 212, 210);
+    
+}
